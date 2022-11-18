@@ -12,7 +12,7 @@ table {
     border-spacing:0;
 }
 header {
-  background-color: #eeeeee;
+  background-color: #cec9fb;
   font-family: helvetica;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -33,8 +33,8 @@ h2 {
   font-family: helvetica;
   margin-top: 10%;
   border-radius: 10px;
-  border-color: black;
-  border-style: inset;
+  border-color: #e6e6e6e6;
+  border-style: solid;
   margin-left: 33%;
   margin-right: 33%;
 }
@@ -46,6 +46,7 @@ button {
   border-width: 1px;
   font-size: 20px;
   font-family: helvetica;
+  margin-bottom: 20px;
 }
 select {
   font-size: 15px;
