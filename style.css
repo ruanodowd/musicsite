@@ -1,0 +1,59 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+header {
+  background-color: #eeeeee;
+  font-family: helvetica;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+h1 {
+  color: #262626;
+}
+h2 {
+  color: #262626;
+
+}
+.container{
+  position: static;
+  align-content: center;
+  text-align: center;
+  margin: 20px;
+  font-family: helvetica;
+  margin-top: 10%;
+  border-radius: 10px;
+  border-color: black;
+  border-style: inset;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+button {
+  background-color: #eeeeee;
+  height: 20%;
+  width: 20%;
+  border-radius: 4px;
+  border-width: 1px;
+  font-size: 20px;
+  font-family: helvetica;
+}
+select {
+  font-size: 15px;
+  margin: 10px;
+}
+.headlink {
+  margin-left: 40px;
+}
+option,input {
+  margin: 3px;
+}
