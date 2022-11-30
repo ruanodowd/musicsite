@@ -16,18 +16,13 @@
   <div class="container">
   <h2>Search for a song</h2>
   <form class="search" action="search.php" method="get">
-  <p>name: <input type="text" name="song" value=""></p>
-  <p>artist: <input type="text" name="artist" value=""></p>
-  From the playlist of
-  <input type="radio" name="classmate" value="Ida">Ida
-  <input type="radio" name="classmate" value="Dominik">Dominik
-  <input type="radio" name="classmate" value="Ruan">Ruan
+  <p>Title: <input type="text" name="song" value=""></p>
+  <p>Artist: <input type="text" name="artist" value=""></p>
+  <p>Album: <input type="text" name="artist" value=""></p>
   <br>
-  <select class="select" name="genre">
+  <select class="select" name="Country">
     <option value="0" selected disabled>Select Genre</option>
-    <option value="rap">Rap</option>
-    <option value="irish trad">Irish trad</option>
-    <option value="pop">Pop</option>
+    <option value="France">France</option>
     //these options may be filled out by an sql script in the future
 
   </select>
