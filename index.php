@@ -7,9 +7,9 @@
 
 <body>
   <header>
-    <a class="headlink" href="/">Search music</a>
-    <a class="headlink" href="/about">About</a>
-    <a class="headlink" href="/quiz">Quiz</a>
+    <a class="headlink" href="index">Search music</a>
+    <a class="headlink" href="about">About</a>
+    <a class="headlink" href="quiz">Quiz</a>
   </header>
 
   <div class="container">
