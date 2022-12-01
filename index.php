@@ -17,7 +17,7 @@
   <form class="search" action="search.php" method="get">
   <p>Title: <input type="text" name="song" value=""></p>
   <p>Artist: <input type="text" name="artist" value=""></p>
-  <p>Album: <input type="text" name="artist" value=""></p>
+  <p>Album: <input type="text" name="album" value=""></p>
   <br>
   <select class="select" name="Country">
     <option value="0" selected disabled>Select Country</option>
