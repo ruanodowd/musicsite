@@ -29,11 +29,23 @@
   <div class="container">
   <h2>Search for a song</h2>
 <?php
-$sql = "SELECT artists.nameArtist, discs.nameDisc, songs.nameSong FROM music WHERE songs.nameSong = $song AND discs.nameDisc = $disc";
+$sql = "SELECT artists.nameArtist AS artist, discs.nameDisc AS disc, songs.nameSong AS song
+ FROM artists, discs, songs
+ WHERE songs.idDisc = discs.idDisc AND discs.idArtist = artists.idArtist
+ AND songs.nameSong LIKE '%$song%' AND discs.nameDisc LIKE '%$album%'";
 $result = mysqli_query($con,$sql);
-foreach($result as $row) {
-  echo $row['title'] ;
+
+if (!$result) {
+    echo "<p>Problem with request: " . mysqli_error($con) . ".</p>\n";
+    die;
 }
+echo "<table id='results'>";
+while ($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  echo "<td>" . $row['song'] . "</td><td>" . $row['artist'] . "</td><td>" . $row['disc'] . "</td>";
+  echo "</tr>";
+}
+echo "</table>";
 mysqli_close($con);
 
   ?>
