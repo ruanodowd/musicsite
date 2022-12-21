@@ -7,6 +7,7 @@
       $artist = $_GET["Artist"];
       $song = $_GET["Song"];
       $album = $_GET["Album"];
+      $genre = $_GET["Genre"];
       $servername = "localhost";
       $username = "root";
       $password = "";
@@ -32,7 +33,7 @@
    <form class="check" action="check_quiz.php" method="get">
        
 <?php
-$random = rand(0,1);
+$random = rand(0,2);
        if ($random=0){
 $sql = "SELECT ida.Artist, ida.Album, ida.Song, ida.Genre FROM ida WHERE ida.ID = rand(1,50);
 $result = mysqli_query($con,$sql);
