@@ -13,11 +13,9 @@
   </header>
   <div class="container">
     <h2>About us</h2>
-      <p>We are a team of three students that love music and wanted to make a website gathering lots of songs.</p>
+      <p>We are a team of three students that love music and wanted to make a website gathering lots of songs, so here we are, with a database made up of niche songs that you could enjoy.</p>
       <br>
-      <p>Feel free to look up songs or, if you feel like being challenged, try to guess which songs come from whose playlist in the "quiz" tab.</p>
-      <br>
-      <p>Special thanks to Mr Barsamian, you're a real one</p>
+      <p>Special thanks to Mr Barsamian, you're a real one :)</p>
     </div>
 </body>
 </html>
