@@ -12,21 +12,18 @@
       $username = "root";
       $password = "";
       $dbname = "music";
-
       $con = mysqli_connect($servername, $username, $password, $dbname);
       if (mysqli_connect_errno()) {
         die("Connection failed: " . mysqli_connect_errno());
       }
     ?>
 </head>
-
 <body>
   <header>
     <a class="headlink" href="index">Search music</a>
     <a class="headlink" href="about">About</a>
     <a class="headlink" href="quiz">Quiz</a>
   </header>
-
   <div class="container">
   <h2>Search for a song</h2>
 <?php
@@ -35,7 +32,6 @@ $sql = "SELECT artists.nameArtist AS artist, discs.nameDisc AS disc, songs.nameS
  WHERE songs.idDisc = discs.idDisc AND discs.idArtist = artists.idArtist
  AND songs.nameSong LIKE '%$song%' AND discs.nameDisc LIKE '%$album%'";
 $result = mysqli_query($con,$sql);
-
 if (!$result) {
     echo "<p>Problem with request: " . mysqli_error($con) . ".</p>\n";
     die;
@@ -48,9 +44,7 @@ while ($row = mysqli_fetch_array($result)) {
 }
 echo "</table>";
 mysqli_close($con);
-
   ?>
-
   </div>
 </body>
 </html>
